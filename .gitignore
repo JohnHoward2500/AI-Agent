@@ -2,4 +2,5 @@ AI_Agent/.venv
 AI_Agent/.python-version
 AI_Agent/pyproject.toml
 AI_Agent/uv.lock
+AI_Agent/.env
 
