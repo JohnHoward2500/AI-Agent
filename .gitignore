@@ -3,4 +3,4 @@ AI_Agent/.python-version
 AI_Agent/pyproject.toml
 AI_Agent/uv.lock
 AI_Agent/.env
-
+AI_Agent/functions/__pycache__
