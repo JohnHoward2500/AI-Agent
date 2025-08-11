@@ -1,5 +1,5 @@
 import os
-from google.genai import types
+from google.genai import types # type: ignore
 
 def get_files_info(working_directory, directory="."):
     full_path = os.path.join(working_directory, directory)

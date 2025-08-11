@@ -1,10 +1,10 @@
 import os
 import sys
-from dotenv import load_dotenv
+from dotenv import load_dotenv # type: ignore
 from google import genai
-from google.genai import types
+from google.genai import types # type: ignore
 from prompts import *
-from call_function import available_functions
+from call_function import *
 
 load_dotenv()
 api_key = os.environ.get("GEMINI_API_KEY")
@@ -43,7 +43,12 @@ def main():
         print(f"Response tokens: {response.usage_metadata.candidates_token_count}")
     if response.function_calls:
         for function in response.function_calls:
-            print(f"Calling function: {function.name}({function.args})")
+            result = call_function(function, verbose)
+            if result.parts[0].function_response.response:
+                if verbose:
+                    print(f"-> {result.parts[0].function_response.response}")
+            else:
+                raise Exception("Expected function response structure not found")
     else:
         print(response.text)
 
