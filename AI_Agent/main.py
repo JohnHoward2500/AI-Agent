@@ -41,14 +41,21 @@ def main():
         print(f"User prompt: {user_input}")
         print(f"Prompt tokens: {response.usage_metadata.prompt_token_count}")
         print(f"Response tokens: {response.usage_metadata.candidates_token_count}")
+    
     if response.function_calls:
+        function_responses = []
         for function in response.function_calls:
             result = call_function(function, verbose)
-            if result.parts[0].function_response.response:
-                if verbose:
-                    print(f"-> {result.parts[0].function_response.response}")
-            else:
-                raise Exception("Expected function response structure not found")
+            if(
+                not result.parts
+                or not result.parts[0].function_response
+            ):
+                raise Exception("empty function call result")
+            if verbose:
+                print(f"-> {result.parts[0].function_response.response}")
+            function_responses.append(result.parts[0])
+        if not function_responses:
+            raise Exception("Expected function response structure not found")
     else:
         print(response.text)
 
