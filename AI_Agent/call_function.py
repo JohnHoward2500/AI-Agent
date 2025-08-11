@@ -1,4 +1,4 @@
-from google.genai import types
+from google.genai import types # type: ignore
 from functions.get_files_info import schema_get_files_info
 from functions.get_file_content import schema_get_file_content
 from functions.run_python import schema_run_python_file

@@ -1,8 +1,8 @@
 import os
 import sys
-from dotenv import load_dotenv
+from dotenv import load_dotenv # type: ignore
 from google import genai
-from google.genai import types
+from google.genai import types # type: ignore
 from prompts import *
 from call_function import available_functions
 

@@ -1,5 +1,5 @@
 import os
-from google.genai import types
+from google.genai import types # type: ignore
 
 def write_file(working_directory, file_path, content):
     working_dir_abs = os.path.abspath(working_directory)
@@ -36,7 +36,7 @@ schema_write_file = types.FunctionDeclaration(
                 type=types.Type.STRING,
                 description="what is going to be written inside the file in file_path",
             )
-            
         },
+        required=["file_path", "content"]
     )
 )
