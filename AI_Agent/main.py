@@ -87,4 +87,4 @@ def generate_content(client, messages, verbose):
     messages.append(types.Content(role="user", parts=function_responses))
 
 if __name__ == "__main__":
-    print(main())
+    main()
