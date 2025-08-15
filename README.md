@@ -1,4 +1,4 @@
-**IMPORTANT: This project was created to learn about learn about AI and apply the material I have been studying in a practical project.  NOT DESIGNED FOR REAL WORLD USE**
+**IMPORTANT: This project was created to learn about AI and apply the material I have been studying in a practical project.  NOT DESIGNED FOR REAL WORLD USE**
 
 **Title:** Gemini Coding AI Agent
 
