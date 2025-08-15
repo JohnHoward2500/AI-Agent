@@ -1,6 +1,6 @@
 **IMPORTANT: This project was created to learn about AI and apply the material I have been studying in a practical project.  NOT DESIGNED FOR REAL WORLD USE**
 
-**Title:** Gemini Coding AI Agent
+**Title:** Gemini AI Coding Agent
 
 **Description:**  This is an coding AI agent that is accessed through the terminal.  Its software development tool powered by google gemini that can debug, write, and run code in a provided working directory.
 This coding AI Agent can be used to automatically fix bugs, write tests, create documentation, etc as well as can be asked questions like AI chat agents. 
