@@ -13,7 +13,7 @@ google-genai==1.12.1 <br/>
   Open the AI_Agent directory by typing "cd AI_Agent" in the terminal <br/>
   Initialize the vertual environment by typing "source .venv/bin/activate" in the terminal <br/>
   To use the agent type "uv run main.py 'your_prompt'" in the terminal <br/>
-  Optional: to access additional information type --verbose after your prompt  Example: uv run main.py "your_prompt" --verbose
+  Optional: to access additional information type --verbose after your prompt  Example: uv run main.py "your_prompt" --verbose <br/>
   Change the working directory in functions/config.py to your project root
 
 **Additional Info**
