@@ -14,3 +14,8 @@ google-genai==1.12.1 <br/>
   Initialize the vertual environment by typing "source .venv/bin/activate" in the terminal <br/>
   To use the agent type "uv run main.py 'your_prompt'" in the terminal <br/>
   Optional: to access additional information type --verbose after your prompt  Example: uv run main.py "your_prompt" --verbose
+  Change the working directory in functions/config.py to your project root
+
+**Additional Info**
+  The calculator folder is an example project to demonstraight how you would setup a project that uses this coding agent.
+  
