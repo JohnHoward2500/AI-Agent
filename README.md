@@ -16,6 +16,6 @@ google-genai==1.12.1 <br/>
   Optional: to access additional information type --verbose after your prompt  Example: uv run main.py "your_prompt" --verbose <br/>
   Change the working directory in functions/config.py to your project root
 
-**Additional Info**
+**Additional Info** <br/>
   The calculator folder is an example project to demonstraight how you would setup a project that uses this coding agent.
   
